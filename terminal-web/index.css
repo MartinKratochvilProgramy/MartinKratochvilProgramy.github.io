@@ -66,6 +66,14 @@ textarea {
 
 .cmd-text {
     font-size: 20px;
+    color: white;
+    padding-top: 11px;
+    margin: 0 0 0 14px;
+    display: inline;
+}
+
+.link-text {
+    font-size: 20px;
     color: var(--text-green-color);
     padding-top: 11px;
     margin: 0 0 0 14px;
