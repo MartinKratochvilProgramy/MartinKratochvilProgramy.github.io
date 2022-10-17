@@ -119,6 +119,7 @@ async function displayItem(item, cmd){
 
 function displayProjects(cmd) {
   displayPrevCmd(cmd);
+  textField.innerHTML += "gaaaaaaaaaaa";
   for (let i = 0; i < projects.length; i++) {
     textField.innerHTML += projects[i];
   }
