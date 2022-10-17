@@ -24,7 +24,8 @@ const train = [
   '  0--0--0      0  0      0       0     0        0        0',
 ]
 
-const projects = '<div style="margin: 20px 0 20px 0;">You can check out my projects at: <a href="https://github.com/MartinKratochvilProgramy" target="_blank" class="cmd-text">github.com/MartinKratochvilProgramy</a></div>';
+const projects = ['<div style="margin: 20px 0 20px 0;">Portfolio management website: <a href="https://dailyportfoliomanagement.netlify.app/" target="_blank" class="cmd-text">dailyportfoliomanagement.netlify.app</a></div>',
+                  '<div style="margin: 20px 0 20px 0;">You can check out my other projects at: <a href="https://github.com/MartinKratochvilProgramy" target="_blank" class="cmd-text">github.com/MartinKratochvilProgramy</a></div>'];
 
 const who = [
   'I am a hobby programmer with a degree in mechanical engineering!'
@@ -118,7 +119,9 @@ async function displayItem(item, cmd){
 
 function displayProjects(cmd) {
   displayPrevCmd(cmd);
-  textField.innerHTML += projects;
+  for (let i = 0; i < projects.length; i++) {
+    textField.innerHTML += projects[i];
+  }
 }
 
 async function displayTrain(item, cmd) {
