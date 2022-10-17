@@ -17,8 +17,9 @@ module.exports = {
         'montserrat': ['Montserrat ', 'sans-serif'],
       },
       gridTemplateColumns: {
-        'footer-sm': '0.7fr 1fr 1.4fr',
-        'footer': '1fr 1fr'
+        'footer-lg': '0.7fr 1fr 1.4fr',
+        'footer-sm': '1fr 1fr',
+        'footer': '1fr'
       }
     },
     screens: {
