@@ -24,8 +24,11 @@ const train = [
   '  0--0--0      0  0      0       0     0        0        0',
 ]
 
-const projects = ['<div style="margin: 20px 0 20px 0;">Portfolio management website: <a href="https://dailyportfoliomanagement.netlify.app/" target="_blank" class="link-text">dailyportfoliomanagement.netlify.app</a></div>',
-                  '<div style="margin: 20px 0 20px 0;">You can check out my other projects at: <a href="https://github.com/MartinKratochvilProgramy" target="_blank" class="link-text">github.com/MartinKratochvilProgramy</a></div>'];
+const projects = [
+    '<pre style="margin: 20px 0 20px 0;">Bang! online:                            <a href="https://bangonline.netlify.app" target="_blank" class="link-text">bangonline.netlify.app</a></pre>',
+    '<pre style="margin: 20px 0 20px 0;">Portfolio management website:            <a href="https://dailyportfoliomanagement.netlify.app/" target="_blank" class="link-text">dailyportfoliomanagement.netlify.app</a></pre>',
+    '<pre style="margin: 20px 0 20px 0;">You can check out my other projects at:  <a href="https://github.com/MartinKratochvilProgramy" target="_blank" class="link-text">github.com/MartinKratochvilProgramy</a></pre>'
+  ];
 
 const who = [
   'I am a hobby programmer with a degree in mechanical engineering!'
