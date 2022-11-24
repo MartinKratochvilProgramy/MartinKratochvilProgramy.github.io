@@ -9,6 +9,7 @@ const help = [
   '\'help\'              You know what this does',
   '\'who\'               Who am I?',
   '\'projects\'          Show projects ',
+  '\'contact\'           How to contact me ',
   '\'train\'             Show me the train',
   '\'clear\'             Clear command prompt',
   '\'name user-name\'    Change user name',
@@ -28,6 +29,11 @@ const projects = [
     '<pre style="margin: 20px 0 20px 0;">Bang! online:                            <a href="https://bangonline.netlify.app" target="_blank" class="link-text">bangonline.netlify.app</a></pre>',
     '<pre style="margin: 20px 0 20px 0;">Portfolio management website:            <a href="https://dailyportfoliomanagement.netlify.app/" target="_blank" class="link-text">dailyportfoliomanagement.netlify.app</a></pre>',
     '<pre style="margin: 20px 0 20px 0;">You can check out my other projects at:  <a href="https://github.com/MartinKratochvilProgramy" target="_blank" class="link-text">github.com/MartinKratochvilProgramy</a></pre>'
+  ];
+
+const contact = [
+    '<pre style="margin: 20px 0 20px 0;">E-mail:       <span class="user-prompt">martvil96@gmail.com</span>',
+    '<pre style="margin: 20px 0 20px 0;">LinkedIn:    <a href="https://www.linkedin.com/in/martin-kratochvil-27a146102/" target="_blank" class="link-text">https://www.linkedin.com/in/martin-kratochvil-27a146102/</a></pre>',
   ];
 
 const who = [
@@ -63,7 +69,10 @@ function command(cmd) {
         displayItem(who, cmd)
         break;
       case 'projects':
-        displayProjects(cmd);
+        displayFormatted(cmd, projects);
+        break;
+      case 'contact':
+        displayFormatted(cmd, contact);
         break;
       case 'train':
         displayTrain(train, cmd);
@@ -120,10 +129,10 @@ async function displayItem(item, cmd){
   }
 }
 
-function displayProjects(cmd) {
+function displayFormatted(cmd, source) {
   displayPrevCmd(cmd);
-  for (let i = 0; i < projects.length; i++) {
-    textField.innerHTML += projects[i];
+  for (let i = 0; i < source.length; i++) {
+    textField.innerHTML += source[i];
   }
 }
 
