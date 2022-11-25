@@ -48,7 +48,6 @@
 .about-shown {
     animation: 1s ease-out 0s 1 slideInFromTopAbout;
     height: 90vh;
-
 }
 
 .about-img {
@@ -110,4 +109,14 @@ ul li::before {
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
+
+@media (max-width: 640px) {
+    .about-container_right{
+        display: none;
+    }
+    .about-shown { 
+        height: auto;
+        margin-bottom: 40px;
+    }
+}

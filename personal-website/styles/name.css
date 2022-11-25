@@ -52,4 +52,21 @@
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
+
+@media (max-width: 640px) {
+    .name-container {
+        justify-content: start;
+        margin-top: 94px;
+        height: auto;
+    }
+    .name-my-name  {
+        font-size: 46px;
+    }
+    .name-my-proffesion  {
+        font-size: 46px;
+    }
+    .name-description {
+        max-width: 100%;
+    }
+}

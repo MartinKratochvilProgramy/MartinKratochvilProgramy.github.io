@@ -19,14 +19,14 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
 
 @media (min-width: 640px) {
     .container {
-        max-width: 640px
+        max-width: 640px;
     }
 }
 @media (min-width: 768px) {

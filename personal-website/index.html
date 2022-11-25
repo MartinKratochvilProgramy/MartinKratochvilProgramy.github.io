@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/name.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +28,10 @@
             <a class="header-item" href="#about"><span class="bright-green">01.</span> About</a>
         </div>
         <div class="header-animate-from-top">
-            <a class="header-item" href="#"><span class="bright-green">02.</span> Work</a>
+            <a class="header-item" href="#projects"><span class="bright-green">02.</span> Projects</a>
         </div>
         <div class="header-animate-from-top">
             <a class="header-item" href="#"><span class="bright-green">03.</span> Contact</a>
-        </div>
-        <div class="header-language header-animate-from-top">
-            <a href="index.html" class="header-item_language">EN</a>|<a href="index_cz.html" class="header-item_language">CZ</a>
         </div>
     </header>
     <div class="container">
@@ -97,12 +95,12 @@
                 </div>
                 <div class="projects-description-container-right">
                     <div class="projects-featured-project">Featured Project</div>
-                    <h2 class="projects-prject-name">Portfolio Management App</h2>
-                    <div class="projects-project-details projects-details-right">
+                    <h2 class="projects-prject-name">Portfolio Management</h2>
+                    <a href="https://dailyportfoliomanagement.netlify.app/demo" class="projects-project-details projects-details-right" target=”_blank”>
                         A minimal web app to manage your <span class="bright-green">investment portfolio</span>. Add your stocks and every week-day
                         the app finds current prices of your investments lets you see, how your <span class="bright-green">net-worth</span> changes
                         in time.
-                    </div>
+                    </a>
                     <div class="projects-project-tech-stack">
                         <div class="projects-project-tech-stack-item-right">
                             React
@@ -127,10 +125,10 @@
                 <div class="projects-description-container-left">
                     <div class="projects-featured-project">Featured Project</div>
                     <h2 class="projects-prject-name">Bang! online</h2>
-                    <div class="projects-project-details projects-details-left">
+                    <a href="https://bangonline.netlify.app/about" class="projects-project-details projects-details-left" target=”_blank”>
                         An online game based on the card game <span class="bright-green">'Bang!'</span> using WebSockets. 
                         Create a game room and play against up to 5 other people!
-                    </div>
+                    </a>
                     <div class="projects-project-tech-stack">
                         <div class="projects-project-tech-stack-item-left">
                             React
@@ -145,7 +143,7 @@
                             TailwindCSS
                         </div>
                     </div>
-                    <a href="https://github.com/MartinKratochvilProgramy/Bang_online_server" target=”_blank” >
+                    <a href="https://github.com/MartinKratochvilProgramy/Bang_online_server" target=”_blank”>
                         <img class="projects-github-link" src="src/github-lightgray.png" alt="">
                     </a>
                 </div>
@@ -165,10 +163,10 @@
                 <div class="projects-description-container-right">
                     <div class="projects-featured-project">Featured Project</div>
                     <h2 class="projects-prject-name">Terminal Web</h2>
-                    <div class="projects-project-details projects-details-right">
+                    <a href="https://martinkratochvilprogramy.github.io/terminal-web/" class="projects-project-details projects-details-right" target=”_blank”>
                         A simple web that works as a <span class="bright-green">teminal</span>. Navigate the console by typing
                         commands, type 'help' to display all available commands.
-                    </div>
+                    </a>
                     <div class="projects-project-tech-stack">
                         <div class="projects-project-tech-stack-item-right">
                             JavaScript
@@ -184,6 +182,26 @@
                         <img class="projects-github-link" src="src/github-lightgray.png" alt="">
                     </a>
                 </div>
+            </div>
+        </div>
+        <!-- CONTACT -->
+        <div id="contact" class="contact-shown">
+            <div class="projects-featured-project">
+                03. What's next?
+            </div>
+            <h1 class="contact-header">Get in touch</h1>
+            <div class="contact-text">
+                I am currently looking for any opportunity to learn new skills and expand my tech stack.
+                Would you like to work with me? Contact me using one of the methods listed below.
+            </div>
+            <div class="contact-email"><span id="email" >martvil96@gmail.com</span><div id="email-copied" class="contact-copied">Copied!</div></div>
+            <div class="contact-social-links">
+                <a class="contact-social-link" href="https://github.com/MartinKratochvilProgramy" target=”_blank” >
+                    <img class="projects-github-link" src="src/github-lightgray.png" alt="">
+                </a>
+                <a class="contact-social-link" href="https://www.linkedin.com/in/martin-kratochvil-27a146102" target=”_blank” >
+                    <img class="projects-github-link" src="src/linkedin.png" alt="">
+                </a>
             </div>
         </div>
     </div>

@@ -35,7 +35,7 @@
 
 .projects-shown {
     animation: 1s ease-out 0s 1 slideInFromTopProjects;
-    height: 90vh;
+    position: relative;
 }
 
 .projects-img-container {
@@ -54,7 +54,7 @@
 }
 
 .projects-description-container-right {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
 }
 
 .projects-description-container-left {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -88,6 +88,7 @@
 }
 
 .projects-project-details{
+    width: 110%;
     font-size: 14px;
     line-height: 26px;
     color: var(--lightgray);
@@ -96,6 +97,9 @@
     padding: 20px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    text-decoration: none;
+
+    pointer-events: none;
 }
 
 .projects-details-right {
@@ -133,12 +137,59 @@
 }
 
 @keyframes slideInFromTopProjects {
-0% {
-    transform: translateY(-10%);
-    opacity: 0;
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-100% {
-    transform: translateY(0);
-    opacity: 1;
-}
+
+@media (max-width: 640px) {
+    .projects-container {
+        margin-bottom: 20px;
+    }
+    .projects-img-container{
+        display: none;
+    }
+    .projects-description-container-right {
+        width: 100%;
+        position: inherit;
+        align-items: start;
+    }
+    .projects-description-container-left {
+        width: 100%;
+        position: inherit;
+        align-items: start;
+    }
+    .projects-project-details {
+        width: auto;
+        pointer-events: all;
+    }
+    .projects-project-tech-stack-item-right {
+        font-size: 12px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .projects-project-tech-stack-item-left {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .projects-details-right {
+        text-align: start;
+    }
+    .projects-description-container-right {
+        justify-content: center;
+        align-items: center;
+    }
+    .projects-description-container-left {
+        justify-content: center;
+        align-items: center;
+    }
+    .projects-shown {
+        margin-bottom: 120px;
+    }
+
 }
