@@ -1,0 +1,144 @@
+.projects-header_container {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projects-header {
+    font-family: var(--inter);
+    color: var(--lightgray);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.projects-header_number {
+    color: var(--green);
+    font-family: var(--fira);
+    font-size: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.projects-hidden {
+    opacity: 0;
+}
+
+.projects-shown {
+    animation: 1s ease-out 0s 1 slideInFromTopProjects;
+    height: 90vh;
+}
+
+.projects-img-container {
+    width: 60%;
+}
+
+.projects-img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.projects-img:hover {
+    filter: none;
+}
+
+.projects-description-container-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    right: 0;
+    position: absolute;
+}
+
+.projects-description-container-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.projects-featured-project {
+    color: var(--green);
+    font-family: var(--fira);
+}
+
+.projects-prject-name {
+    color: var(--lightgray);
+    font-family: var(--inter);
+    margin: 10px 0;
+}
+
+.projects-project-details{
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--lightgray);
+    font-family: var(--inter);
+    background-color: var(--dark-navy);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.projects-details-right {
+    text-align: end;
+}
+
+.projects-details-left {
+    text-align: start;
+}
+
+.projects-project-tech-stack {
+    margin-top: 18px;
+    font-size: 14px;
+    color: var(--lightgray);
+    font-family: var(--fira);
+    display: flex;
+}
+
+.projects-project-tech-stack-item-right {
+    margin-left: 28px;
+}
+
+.projects-project-tech-stack-item-left {
+    margin-right: 28px;
+}
+
+.projects-github-link {
+    width: 20px;
+    margin-top: 12px;
+    color: var(--green);
+}
+
+.projects-github-link:hover {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(52%) saturate(425%) hue-rotate(100deg) brightness(103%) contrast(103%); 
+}
+
+@keyframes slideInFromTopProjects {
+0% {
+    transform: translateY(-10%);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
