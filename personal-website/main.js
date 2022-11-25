@@ -36,20 +36,14 @@ window.addEventListener("scroll", myScrollFunc);
 
 // ********** COPY TO CLIPBOARD **********
 const email = document.getElementById("email");
+const emailCopyIcon = document.getElementById("email-copy-icon");
 const emailCopied = document.getElementById("email-copied");
 
-email.onclick = function() {
+emailCopyIcon.onclick = function() {
   document.execCommand("copy");
   emailCopied.classList.add('contact-copied-display')
   setTimeout(() => {
     emailCopied.classList.remove('contact-copied-display')
-  }, 2000)
+  }, 1500)
+  navigator.clipboard.writeText(email.textContent)
 }
-
-email.addEventListener("copy", function(event) {
-  event.preventDefault();
-  if (event.clipboardData) {
-    event.clipboardData.setData("text/plain", email.textContent);
-    console.log(event.clipboardData.getData("text"))
-  }
-});

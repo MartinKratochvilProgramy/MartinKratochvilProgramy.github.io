@@ -50,12 +50,7 @@
     margin-top: 10px;
     font-family: var(--fira);
     color: var(--lightgray);
-    cursor: pointer;
     position: relative;
-}
-
-.contact-email:hover {
-    color: var(--green);
 }
 
 .contact-copied {

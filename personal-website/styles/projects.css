@@ -130,6 +130,7 @@
     width: 20px;
     margin-top: 12px;
     color: var(--green);
+    cursor: pointer;
 }
 
 .projects-github-link:hover {
