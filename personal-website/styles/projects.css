@@ -2,7 +2,7 @@
     padding-top: 30px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .projects-header {
@@ -148,7 +148,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 840px) {
     .projects-container {
         margin-bottom: 20px;
     }
@@ -192,5 +192,11 @@
     .projects-shown {
         margin-bottom: 120px;
     }
-
-}
+    .projects-header {
+        font-size: 20px;
+    }
+    .projects-header_container {
+        align-items: center;
+        justify-content: center;
+    }
+}   

@@ -13,6 +13,9 @@ window.onscroll = function() {
 } 
 
 // ********** SHOW ABOUT ON SCROLL **********
+const nameEl = document.getElementById("name");
+const nameElHeight = nameEl.offsetHeight;
+
 const aboutEl = document.getElementById("about");
 const aboutElHeight = aboutEl.offsetHeight;
 
@@ -22,11 +25,11 @@ const projectsElHeight = projectsEl.offsetHeight;
 
 var myScrollFunc = function () {
     var y = window.scrollY;
-    if (y >= aboutElHeight/2) {
+    if (y >= nameElHeight/4) {
       aboutEl.className = "about-shown";
     }
 
-    if (y >=  window.innerHeight - aboutElHeight/2) {
+    if (y >=  nameElHeight - aboutElHeight/4) {
       projectsEl.className = "projects-shown";
     }
 };

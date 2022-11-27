@@ -115,8 +115,16 @@ ul li::before {
     .about-container_right{
         display: none;
     }
+    .about-container_left{
+        text-align: center;
+        padding: 0;
+    }
     .about-shown { 
         height: auto;
         margin-bottom: 40px;
+    }
+    .about-header_container {
+        align-items: center;
+        justify-content: center;
     }
 }
