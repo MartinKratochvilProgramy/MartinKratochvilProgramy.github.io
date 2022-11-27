@@ -83,7 +83,7 @@
 }
 
 .contact-social-link:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     filter: brightness(0) saturate(100%) invert(81%) sepia(52%) saturate(425%) hue-rotate(100deg) brightness(103%) contrast(103%); 
 }
 
