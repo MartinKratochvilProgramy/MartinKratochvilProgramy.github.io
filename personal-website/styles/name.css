@@ -59,7 +59,7 @@
         justify-content: start;
         margin-top: 94px;
         margin-bottom: 40px;
-        height: 60vh;
+        height: auto;
     }
     .name-my-name  {
         font-size: 46px;
