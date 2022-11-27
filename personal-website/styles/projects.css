@@ -150,7 +150,7 @@
 
 @media (max-width: 840px) {
     .projects-container {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .projects-img-container{
         display: none;
@@ -184,6 +184,12 @@
     .projects-description-container-right {
         justify-content: center;
         align-items: center;
+    }
+    .projects-details-left {
+        text-align: center;
+    }
+    .projects-details-right {
+        text-align: center;
     }
     .projects-description-container-left {
         justify-content: center;

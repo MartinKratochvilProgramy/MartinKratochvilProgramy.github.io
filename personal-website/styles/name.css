@@ -58,8 +58,8 @@
     .name-container {
         justify-content: start;
         margin-top: 94px;
-        height: auto;
         margin-bottom: 40px;
+        height: 60vh;
     }
     .name-my-name  {
         font-size: 46px;

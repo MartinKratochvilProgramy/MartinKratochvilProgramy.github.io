@@ -31,6 +31,9 @@ hr {
     margin: auto;
 }
 
+ul {
+    text-align: left;
+}
 
 @media (min-width: 640px) {
     .container {
