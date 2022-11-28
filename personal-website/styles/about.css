@@ -43,6 +43,7 @@
 
 .about-hidden {
     opacity: 0;
+    height: 60vh;
 }
 
 .about-shown {

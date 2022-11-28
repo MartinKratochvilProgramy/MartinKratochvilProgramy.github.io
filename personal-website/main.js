@@ -24,13 +24,16 @@ const aboutElHeight = aboutEl.offsetHeight;
 const projectsEl = document.getElementById("projects");
 const projectsElHeight = projectsEl.offsetHeight;
 
+// ********** WINDOW HEIGHT **********
+const viewHeight = window.innerHeight;
+
 var myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y >= nameElHeight/4) {
+    var y = window.scrollY + viewHeight;
+    if (y >= nameElHeight * 1.2) {
       aboutEl.className = "about-shown";
     }
-
-    if (y >=  nameElHeight * 6/8) {
+    console.log(y, aboutElHeight);
+    if (y >=  nameElHeight + aboutElHeight * 1.2) {
       projectsEl.className = "projects-shown";
     }
 };

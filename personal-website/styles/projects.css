@@ -81,10 +81,19 @@
     font-family: var(--fira);
 }
 
-.projects-prject-name {
+.projects-project-name {
     color: var(--lightgray);
     font-family: var(--inter);
     margin: 10px 0;
+}
+
+.projects-link {
+    color: var(--lightgray);
+}
+
+.projects-link:hover {
+    color: var(--green);
+    transition-duration: 0.4s;
 }
 
 .projects-project-details{
@@ -99,7 +108,6 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     text-decoration: none;
 
-    pointer-events: none;
 }
 
 .projects-details-right {
@@ -168,7 +176,6 @@
     }
     .projects-project-details {
         width: auto;
-        pointer-events: all;
     }
     .projects-project-tech-stack-item-right {
         font-size: 12px;
