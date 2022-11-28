@@ -12,10 +12,11 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 } 
 
-// ********** SHOW ABOUT ON SCROLL **********
+// ********** SHOW NAME ON SCROLL **********
 const nameEl = document.getElementById("name");
 const nameElHeight = nameEl.offsetHeight;
 
+// ********** SHOW ABOUT ON SCROLL **********
 const aboutEl = document.getElementById("about");
 const aboutElHeight = aboutEl.offsetHeight;
 
@@ -29,7 +30,7 @@ var myScrollFunc = function () {
       aboutEl.className = "about-shown";
     }
 
-    if (y >=  nameElHeight - aboutElHeight/4) {
+    if (y >=  nameElHeight * 6/8) {
       projectsEl.className = "projects-shown";
     }
 };

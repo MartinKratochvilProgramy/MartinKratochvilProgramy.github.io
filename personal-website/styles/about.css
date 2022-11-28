@@ -47,7 +47,7 @@
 
 .about-shown {
     animation: 1s ease-out 0s 1 slideInFromTopAbout;
-    height: 90vh;
+    height: 60vh;
 }
 
 .about-img {
