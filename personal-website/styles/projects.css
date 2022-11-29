@@ -62,6 +62,7 @@
     align-items: end;
     right: 0;
     position: absolute;
+    margin-bottom: 80px;
 }
 
 .projects-description-container-left {
@@ -74,6 +75,7 @@
     left: 0;
     position: absolute;
     z-index: 10;
+    margin-bottom: 80px;
 }
 
 .projects-featured-project {
