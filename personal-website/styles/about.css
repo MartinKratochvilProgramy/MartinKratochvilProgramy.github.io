@@ -49,7 +49,7 @@
 .about-shown {
     animation: 1s ease-out 0s 1 slideInFromTopAbout;
     height: 60vh;
-    margin-bottom: 140px;
+    margin-bottom: 160px;
 }
 
 .about-img {
