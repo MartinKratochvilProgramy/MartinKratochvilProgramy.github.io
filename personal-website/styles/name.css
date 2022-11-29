@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     
     animation: 1s ease-out 0s 1 slideInFromTopName;
 }
